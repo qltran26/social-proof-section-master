@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+
+$veryDarkMagenta: hsl(300, 43%, 22%);
+$softPink: hsl(333, 80%, 67%);
+$darkGrayishMagenta: hsl(303, 10%, 53%);
+$lightGrayishMagenta: hsl(300, 24%, 96%);
+$white: hsl(0, 0%, 100%);
+
+:root {
+    font-family: 'League Spartan', sans-serif; //Weights: 400, 500, 700
+    font-size: 15px;
+    background: url(/images/bg-pattern-top-mobile.svg) top center/100% no-repeat;
+}
+
+main {
+
+    .container {
+        margin: 90px auto;
+        width: 90%;
+
+
+        .header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .intro {
+
+                h1 {
+                    margin: 0 auto;
+                    width: 60%;
+                    text-align: center;
+                    font-size: 30px;
+                    font-weight: 700;
+                    line-height: 25px;
+                    color: $veryDarkMagenta;
+                }
+
+                p {
+                    margin: 20px auto;
+                    width: 80%;
+                    text-align: center;
+                    font-weight: 500;
+                    color: $darkGrayishMagenta;
+                }
+            }
+
+            .rates {
+                margin: 0 auto;
+                width: 80%;
+
+                .rate {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-evenly;
+                    text-align: center;
+                    margin: 15px auto;
+                    height: 70px;
+                    background-color: $lightGrayishMagenta;
+                    border-radius: 5px;
+
+                    .stars {
+                        display: flex;
+                        justify-content: center;
+
+                        img {
+                            margin: 0 3px;
+                        }
+                    }
+
+                    p {
+                        font-weight: 700;
+                        color: $veryDarkMagenta;
+                    }
+                }
+            }
+        }
+
+        .reviews {
+            display: flex;
+            flex-direction: column;
+            margin: 10px auto;
+            width: 80%;
+
+            .review {
+                margin: 20px auto;
+                padding: 25px;
+                border-radius: 5px;
+                background-color: $veryDarkMagenta;
+
+                .person {
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 20px;
+
+                    img {
+                        margin-right: 20px;
+                        height: 35px;
+                        width: 35px;
+                        border-radius: 50%;
+                    }
+
+                    &-info {
+                        display: flex;
+                        flex-direction: column;
+                        font-weight: 700;
+
+                        .name {
+                            color: $white;
+                        }
+
+                        .desc {
+                            color: $softPink;
+                        }
+                    }
+                }
+
+                p {
+                    color: $white;
+                }
+            }
+        }
+    }
+
+    .attribution {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        width: 90%;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    :root {
+        background: url(/images/bg-pattern-top-desktop.svg) top center/10% no-repeat;
+
+    }
+
+    main {
+
+        .container {
+            width: 90%;
+
+            .header {
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                padding-left: 200px;
+
+                .intro {
+                    display: flex;
+                    flex-direction: column;
+                    text-align: start;
+                    width: 35%;
+
+                    h1 {
+                        margin: 0;
+                        width: 90%;
+                        text-align: start;
+                        font-size: 50px;
+                        line-height: 40px;
+                    }
+
+                    p {
+                        margin: 20px 0;
+                        width: 80%;
+                        text-align: start;
+                    }
+                }
+
+                .rates {
+                    margin: 0;
+                    width: 55%;
+
+                    .rate {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        justify-content: flex-start;
+                        margin: 10px 0;
+                        height: 45px;
+
+                        .stars {
+                            margin: 0 20px;
+                        }
+                    }
+
+                    .rate1 {
+                        width: 50%;
+                    }
+
+                    .rate2 {
+                        margin-left: 50px;
+                        width: 50%;
+                    }
+
+                    .rate3 {
+                        margin-left: 100px;
+                        width: 50%;
+                    }
+                }
+            }
+
+            .reviews {
+                flex-direction: row;
+                align-items: flex-start;
+                padding-left: 200px;
+                width: 100%;
+
+                .review {
+                    margin: 20px 0;
+                }
+
+                .review1 {
+                    width: 27%;
+
+                }
+
+                .review2 {
+                    margin-top: 40px;
+                    margin-left: 30px;
+                    width: 27%;
+
+                }
+
+                .review3 {
+                    margin-top: 60px;
+                    margin-left: 30px;
+                    width: 27%;
+
+                }
+            }
+        }
+    }
+}

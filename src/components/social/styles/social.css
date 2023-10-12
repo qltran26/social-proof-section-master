@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap");
+:root {
+  font-family: "League Spartan", sans-serif;
+  font-size: 15px;
+  background: url(/images/bg-pattern-top-mobile.svg) top center/100% no-repeat;
+}
+
+main .container {
+  margin: 90px auto;
+  width: 90%;
+}
+main .container .header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .container .header .intro h1 {
+  margin: 0 auto;
+  width: 60%;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 25px;
+  color: hsl(300, 43%, 22%);
+}
+main .container .header .intro p {
+  margin: 20px auto;
+  width: 80%;
+  text-align: center;
+  font-weight: 500;
+  color: hsl(303, 10%, 53%);
+}
+main .container .header .rates {
+  margin: 0 auto;
+  width: 80%;
+}
+main .container .header .rates .rate {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: center;
+  margin: 15px auto;
+  height: 70px;
+  background-color: hsl(300, 24%, 96%);
+  border-radius: 5px;
+}
+main .container .header .rates .rate .stars {
+  display: flex;
+  justify-content: center;
+}
+main .container .header .rates .rate .stars img {
+  margin: 0 3px;
+}
+main .container .header .rates .rate p {
+  font-weight: 700;
+  color: hsl(300, 43%, 22%);
+}
+main .container .reviews {
+  display: flex;
+  flex-direction: column;
+  margin: 10px auto;
+  width: 80%;
+}
+main .container .reviews .review {
+  margin: 20px auto;
+  padding: 25px;
+  border-radius: 5px;
+  background-color: hsl(300, 43%, 22%);
+}
+main .container .reviews .review .person {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+main .container .reviews .review .person img {
+  margin-right: 20px;
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+}
+main .container .reviews .review .person-info {
+  display: flex;
+  flex-direction: column;
+  font-weight: 700;
+}
+main .container .reviews .review .person-info .name {
+  color: hsl(0, 0%, 100%);
+}
+main .container .reviews .review .person-info .desc {
+  color: hsl(333, 80%, 67%);
+}
+main .container .reviews .review p {
+  color: hsl(0, 0%, 100%);
+}
+main .attribution {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 90%;
+}
+
+@media only screen and (min-width: 1200px) {
+  :root {
+    background: url(/images/bg-pattern-top-desktop.svg) top center/10% no-repeat;
+  }
+  main .container {
+    width: 90%;
+  }
+  main .container .header {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 200px;
+  }
+  main .container .header .intro {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    width: 35%;
+  }
+  main .container .header .intro h1 {
+    margin: 0;
+    width: 90%;
+    text-align: start;
+    font-size: 50px;
+    line-height: 40px;
+  }
+  main .container .header .intro p {
+    margin: 20px 0;
+    width: 80%;
+    text-align: start;
+  }
+  main .container .header .rates {
+    margin: 0;
+    width: 55%;
+  }
+  main .container .header .rates .rate {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 10px 0;
+    height: 45px;
+  }
+  main .container .header .rates .rate .stars {
+    margin: 0 20px;
+  }
+  main .container .header .rates .rate1 {
+    width: 50%;
+  }
+  main .container .header .rates .rate2 {
+    margin-left: 50px;
+    width: 50%;
+  }
+  main .container .header .rates .rate3 {
+    margin-left: 100px;
+    width: 50%;
+  }
+  main .container .reviews {
+    flex-direction: row;
+    align-items: flex-start;
+    padding-left: 200px;
+    width: 100%;
+  }
+  main .container .reviews .review {
+    margin: 20px 0;
+  }
+  main .container .reviews .review1 {
+    width: 27%;
+  }
+  main .container .reviews .review2 {
+    margin-top: 40px;
+    margin-left: 30px;
+    width: 27%;
+  }
+  main .container .reviews .review3 {
+    margin-top: 60px;
+    margin-left: 30px;
+    width: 27%;
+  }
+}/*# sourceMappingURL=social.css.map */
